@@ -24,12 +24,13 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="64dp"
-        android:contentDescription="TODO"
+        android:contentDescription="Dinheiro em mãos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/money_on_hands" />
+        app:srcCompat="@drawable/money_on_hands"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/tvGasto"
@@ -39,7 +40,8 @@
         android:text="Gasto"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/txtGasto"
-        app:layout_constraintTop_toBottomOf="@+id/tvGerenciadorGastos" />
+        app:layout_constraintTop_toBottomOf="@+id/tvGerenciadorGastos"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/txtGasto"
@@ -52,7 +54,9 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvGasto" />
+        app:layout_constraintTop_toBottomOf="@+id/tvGasto"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/tvValor"
@@ -62,7 +66,8 @@
         android:text="Valor (R$)"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/txtValor"
-        app:layout_constraintTop_toBottomOf="@+id/txtGasto" />
+        app:layout_constraintTop_toBottomOf="@+id/txtGasto"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/txtValor"
@@ -76,7 +81,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvValor" />
+        app:layout_constraintTop_toBottomOf="@+id/tvValor"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnTotal"
@@ -88,7 +95,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnLista" />
+        app:layout_constraintStart_toEndOf="@+id/btnLista"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btnLista"
@@ -100,7 +108,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnTotal"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnAdicionar" />
+        app:layout_constraintStart_toEndOf="@+id/btnAdicionar"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btnAdicionar"
@@ -112,6 +121,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnLista"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

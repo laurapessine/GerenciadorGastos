@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import java.util.HashMap;
 
+@SuppressWarnings("FieldCanBeLocal")
 public class MainActivity extends AppCompatActivity {
     private EditText txtGasto;
     private EditText txtValor;
